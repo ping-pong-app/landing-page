@@ -1,44 +1,52 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.23.12",
-    "gatsby-image": "^2.4.9",
-    "gatsby-plugin-manifest": "^2.4.14",
-    "gatsby-plugin-offline": "^3.2.13",
-    "gatsby-plugin-react-helmet": "^3.3.6",
-    "gatsby-plugin-sharp": "^2.6.14",
-    "gatsby-source-filesystem": "^2.3.14",
-    "gatsby-transformer-sharp": "^2.5.7",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "prettier": "2.0.5"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "name": "ping-landing-page",
+    "private": true,
+    "description": "Landing page",
+    "version": "1.0.0",
+    "author": "Miha Jamsek <miha_jamsek@windowslive.com>",
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "lint": "tslint --fix",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.30",
+        "@fortawesome/free-brands-svg-icons": "^5.14.0",
+        "@fortawesome/free-regular-svg-icons": "^5.14.0",
+        "@fortawesome/free-solid-svg-icons": "^5.14.0",
+        "@fortawesome/react-fontawesome": "^0.1.11",
+        "bootstrap": "^4.5.0",
+        "gatsby": "~2.24.7",
+        "gatsby-image": "~2.4.13",
+        "gatsby-plugin-manifest": "~2.4.19",
+        "gatsby-plugin-offline": "~3.2.19",
+        "gatsby-plugin-react-helmet": "~3.3.10",
+        "gatsby-plugin-sass": "~2.3.12",
+        "gatsby-plugin-sharp": "~2.6.20",
+        "gatsby-plugin-typescript": "~2.4.16",
+        "gatsby-remark-images": "~3.3.19",
+        "gatsby-source-filesystem": "~2.3.20",
+        "gatsby-transformer-remark": "~2.8.25",
+        "gatsby-transformer-sharp": "~2.5.11",
+        "node-sass": "~4.14.1",
+        "prop-types": "~15.7.2",
+        "react": "~16.13.1",
+        "react-dom": "~16.13.1",
+        "react-helmet": "~6.1.0",
+        "reactstrap": "~8.5.1"
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.23",
+        "@types/react": "^16.9.43",
+        "@types/react-dom": "^16.9.8",
+        "@types/react-helmet": "^6.0.0",
+        "@types/reactstrap": "^8.5.0",
+        "tslint": "^6.1.2",
+        "tslint-loader": "^3.5.4",
+        "tslint-react": "^5.0.0",
+        "typescript": "^3.9.7"
+    }
 }

@@ -3,5 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
+import { loadIcons } from "./src/media/icons/icons.module"
+import "./src/styles/global.scss";
 
-// You can delete this file if you're not using it
+loadIcons();
