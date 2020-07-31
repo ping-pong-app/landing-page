@@ -1,10 +1,11 @@
 import React from "react";
-import { Footer, Layout } from "../../components";
+import { Footer, Layout, Seo } from "../../components";
 
 
 const BetaPage = () => {
     return (
         <Layout transparentHeader={false}>
+            <Seo title="Beta"/>
             <p>Beta</p>
             <Footer social/>
         </Layout>

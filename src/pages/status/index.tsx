@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Layout } from "../../components";
+import { Footer, Layout, Seo } from "../../components";
 import { ApiStatus, StatusService } from "../../services/status.service";
 
 import "./status.page.scss";
@@ -16,6 +16,7 @@ const StatusPage = () => {
     
     return (
         <Layout transparentHeader={false}>
+            <Seo title="Status"/>
             <div className="status-page">
                 <div className="title-header">
                     <h2 className="text-center">Status of a system supporting Ping application</h2>

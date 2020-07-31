@@ -3,7 +3,7 @@ import { Layout, Seo } from "../components";
 
 const NotFoundPage = () => {
     return (
-        <Layout>
+        <Layout transparentHeader={false}>
             <Seo title={"404: Not found"}/>
             <div>
                 <h1>404 Error!</h1>
