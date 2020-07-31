@@ -45,11 +45,11 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `Ping Landing Page`,
+                short_name: `landing-page`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
+                background_color: `#014A7F`,
+                theme_color: `#014A7F`,
                 display: `minimal-ui`,
                 // icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
             }

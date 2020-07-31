@@ -18,6 +18,13 @@
   }
   .content {
     padding-top: 60px;
-    width: 40%;
+  }
+}
+
+@include device-specific($pc) {
+  .blog-page {
+    .content {
+      width: 40%;
+    }
   }
 }
