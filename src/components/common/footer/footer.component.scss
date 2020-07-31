@@ -1,0 +1,57 @@
+@import "../../../styles/variables";
+
+.footer-component {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+  color: $white;
+  background-color: $blue-300;
+
+  footer {
+    width: 60%;
+
+    .footer-groups {
+      display: flex;
+      justify-content: flex-end;
+      .footer-group {
+        margin-right: 60px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        .group-title {
+          text-transform: uppercase;
+          font-weight: 600;
+
+          span {
+            border-bottom: 2px solid $blue-100;
+            padding-bottom: 4px;
+          }
+        }
+        .group-links {
+          margin-top: 20px;
+
+          .group-link {
+            color: $white;
+            margin-bottom: 10px;
+
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .trademark {
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+
+}

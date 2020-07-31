@@ -1,11 +1,12 @@
 import React from "react";
-import { Layout } from "../../components";
+import { Footer, Layout } from "../../components";
 
 
 const BetaPage = () => {
     return (
         <Layout transparentHeader={false}>
             <p>Beta</p>
+            <Footer social/>
         </Layout>
     );
 }

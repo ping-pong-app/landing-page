@@ -1,0 +1,73 @@
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+
+.header-component {
+  background-color: $blue-primary;
+  height: $header-height;
+  z-index: 10;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  .navbar {
+    width: 80%;
+    padding: 0 !important;
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-family: $font-title;
+      color: $light-grey;
+    }
+
+    .navbar-collapse {
+      justify-content: flex-end;
+
+      .navbar-nav {
+        margin-right: 0 !important;
+
+        a {
+          color: $light-grey !important;
+        }
+      }
+    }
+  }
+
+  &.transparent-header {
+    background-color: transparent !important;
+  }
+}
+
+@include device-specific($phone) {
+  .header-component {
+    .navbar {
+      width: 100%;
+
+      .navbar-brand {
+        margin-left: 20px;
+      }
+
+      .navbar-toggler {
+        margin-right: 20px;
+      }
+
+      .navbar-collapse {
+        width: 100%;
+        background-color: #474747;
+
+        .navbar-nav {
+          a {
+          }
+        }
+      }
+    }
+
+    &.transparent-header {
+    }
+  }
+}
+
+@include device-specific($tablet) {
+
+}

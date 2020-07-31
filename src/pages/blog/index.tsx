@@ -1,6 +1,10 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Layout, Seo } from "../../components";
+import { BlogExcerpt, Footer, Layout, Seo } from "../../components";
+
+import "./blog.page.scss";
+import authors from "../../../blog/authors.json";
+import { Author } from "../../config/blog-author.config";
 
 
 interface BlogItem {
@@ -9,6 +13,7 @@ interface BlogItem {
         date: string;
         path: string;
         title: string;
+        author: string;
     }
 }
 
@@ -25,23 +30,24 @@ const BlogPage = ({ data }: BlogQueryResult) => {
     return (
         <Layout transparentHeader={false}>
             <Seo title="Blog"/>
-            <div>
-                <div>
-                    <h1>Blog</h1>
+            <div className="blog-page">
+                <div className="title-header">
+                    <h1 className="text-center">Blog</h1>
                 </div>
-                <div>
-                    {nodes.map((post, index) => (
-                        <div key={index}>
-                            <h3>{post.frontmatter.title}</h3>
-                            <small>{post.frontmatter.date}</small>
-                            <p>{post.excerpt}</p>
-                            <div>
-                                <Link to={post.frontmatter.path}>Read</Link>
-                            </div>
-                        </div>
-                    ))}
+                <div className="wrapper">
+                    <section className="content">
+                        {nodes.map((post, index) => (
+                            <BlogExcerpt key={index}
+                                title={post.frontmatter.title}
+                                date={post.frontmatter.date}
+                                excerpt={post.excerpt}
+                                authorId={post.frontmatter.author}
+                                path={post.frontmatter.path}/>
+                        ))}
+                    </section>
                 </div>
             </div>
+            <Footer social/>
         </Layout>
     );
 };
@@ -51,11 +57,12 @@ export const blogPageQuery = graphql`
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
             nodes {
                 frontmatter {
-                    date
+                    date(formatString: "DD.MM.YYYY")
                     title
                     path
+                    author
                 }
-                excerpt(pruneLength: 800)
+                excerpt(pruneLength: 600)
             }
         }
     }

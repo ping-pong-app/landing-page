@@ -1,0 +1,51 @@
+@import "../../styles/responsive";
+@import "../../styles/variables";
+
+.status-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+
+  .title-header {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: $white;
+    background-color: $blue-primary;
+  }
+
+  .content {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .status {
+      margin-top: 40px;
+      font-size: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .label {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .status-text {
+        margin-top: 10px;
+      }
+
+      .status-good {
+        color: green;
+      }
+
+      .status-bad {
+        color: $red-300;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+.blog-page {
+  background-color: $black-primary;
+  color: $light-grey;
+
+  .title-header {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: $white;
+    background-color: $blue-primary;
+
+    h1 {
+      margin: 0;
+    }
+  }
+  .content {
+    padding-top: 60px;
+    width: 40%;
+  }
+}

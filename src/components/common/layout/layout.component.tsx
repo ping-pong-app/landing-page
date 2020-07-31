@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react"
-import { Footer, Header } from ".."
+import React, { ReactNode } from "react";
+import { Footer, Header } from "../../index";
 
 
 export interface LayoutProps {
@@ -9,22 +9,21 @@ export interface LayoutProps {
 
 const LayoutComponent = (props: LayoutProps) => {
     
-    const { children, transparentHeader } = props
+    const { children, transparentHeader } = props;
     
     return (
         <>
             <Header transparent={transparentHeader}/>
-            <div>
-                <main>{children}</main>
-                <Footer/>
+            <div className="layout-component">
+                <main className="layout-main">{children}</main>
             </div>
         </>
     );
     
-}
+};
 
 LayoutComponent.defaultProps = {
     transparentHeader: true
-}
+};
 
 export const Layout = LayoutComponent;

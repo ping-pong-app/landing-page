@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+
+.blog-excerpt-component {
+  margin-bottom: 80px;
+
+  h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0 !important;
+  }
+  .with-separator {
+    &:after {
+      content: '\0025CF';
+      font-weight: 200;
+      margin: auto .5rem .1rem;
+      // color: #485371;
+      color: $white;
+    }
+  }
+  p {
+    margin-top: 20px;
+  }
+  .read-more-link {
+    margin-left: 10px;
+
+    a {
+      text-decoration: none;
+      color: $blue-50;
+    }
+  }
+}

@@ -1,4 +1,8 @@
-export { Layout } from "./layout/layout.component";
-export { Header } from "./header/header.component";
-export { Footer } from "./footer/footer.component";
-export { Seo } from "./seo/seo.component";
+export { Layout } from "./common/layout/layout.component";
+export { Header } from "./common/header/header.component";
+export { Footer } from "./common/footer/footer.component";
+export { Seo } from "./common/seo/seo.component";
+export { Social } from "./common/social/social.component";
+
+export { BlogExcerpt } from "./blog/blog-excerpt/blog-excerpt.component";
+export { BlogAuthor } from "./blog/blog-author/blog-author.component";
