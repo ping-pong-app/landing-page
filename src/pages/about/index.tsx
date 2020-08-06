@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
-import { Footer, Layout, Seo, ContactForm } from "../../components";
+import { Footer, Layout, Seo, ContactForm, Contributor } from "../../components";
 import "./about.page.scss";
+import { contributors } from "../../content/contributors.content";
 
 const AboutPage = () => {
     
@@ -57,6 +58,13 @@ const AboutPage = () => {
                         
                         <div className="team-section">
                             <h2 className="text-center">Our team</h2>
+                            <div className="contributors">
+                                {contributors.map((contributor, index) => (
+                                    <div key={index} className="contributor">
+                                        <Contributor contributor={contributor}/>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         
                         <div className="contact-section" ref={contactSection}>

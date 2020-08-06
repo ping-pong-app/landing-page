@@ -20,9 +20,11 @@ export const BlogAuthor = (props: BlogAuthorProps) => {
             <div className="author-meta">
                 <div className="author-name">{author.name}</div>
                 <div className="author-links">
-                    <a href={"https://github.com/" + author.github} target="_blank" rel="noreferrer noopener">
-                        <FontAwesomeIcon icon={["fab", "github"]} size={"2x"}/>
-                    </a>
+                    {author.github && (
+                        <a href={"https://github.com/" + author.github} target="_blank" rel="noreferrer noopener">
+                            <FontAwesomeIcon icon={["fab", "github"]} size={"2x"}/>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

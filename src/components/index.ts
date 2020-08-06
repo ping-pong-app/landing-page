@@ -8,3 +8,5 @@ export { ContactForm } from "./common/contact-form/contact-form.component";
 
 export { BlogExcerpt } from "./blog/blog-excerpt/blog-excerpt.component";
 export { BlogAuthor } from "./blog/blog-author/blog-author.component";
+
+export { Contributor } from "./about/contributor/contributor.component";
