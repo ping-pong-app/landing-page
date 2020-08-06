@@ -41,7 +41,7 @@ const FooterComponent = () => {
                     ))}
                 </div>
                 <div className="trademark">
-                    Pinger App © {new Date().getFullYear()}
+                    Pinger © {new Date().getFullYear()}
                 </div>
             </footer>
         </div>
