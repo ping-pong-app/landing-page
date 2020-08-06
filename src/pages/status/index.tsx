@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StatusPage = () => {
     
-    const [apiStatus, setApiStatus] = useState(ApiStatus.GOOD);
+    const [apiStatus, setApiStatus] = useState<ApiStatus>(ApiStatus.GOOD);
     
     useEffect(() => {
         StatusService.getApiStatus(setApiStatus);
@@ -19,7 +19,7 @@ const StatusPage = () => {
             <Seo title="Status"/>
             <div className="status-page">
                 <div className="title-header">
-                    <h2 className="text-center">Status of a system supporting Ping application</h2>
+                    <h2 className="text-center">Status of a system supporting Pinger application</h2>
                 </div>
                 <div className="content">
                     <div className="status">

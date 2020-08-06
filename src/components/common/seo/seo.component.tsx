@@ -24,7 +24,7 @@ const SeoComponent = (props: SeoProps) => {
         <Helmet
             htmlAttributes={{ lang }}
             title={title}
-            titleTemplate={"%s | Ping"}
+            titleTemplate={"%s | Pinger"}
             meta={fullMeta}
         />
     );

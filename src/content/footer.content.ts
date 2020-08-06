@@ -20,7 +20,7 @@ export const footerGroups: FooterGroup[] = [
         title: "Products",
         links: [
             {
-                title: "Ping App"
+                title: "Pinger App"
             }
         ]
     },

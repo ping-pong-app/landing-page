@@ -1,3 +1,3 @@
-# Ping App landing page
+# Pinger App landing page
 
-[Landing page](https://ping-app.netlify.app/)
+[Landing page](https://pinger.group)

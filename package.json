@@ -1,7 +1,7 @@
 {
-    "name": "ping-landing-page",
+    "name": "pinger-landing-page",
     "private": true,
-    "description": "Landing page",
+    "description": "Pinger landing page",
     "version": "1.0.0",
     "author": "Miha Jamsek <miha_jamsek@windowslive.com>",
     "scripts": {

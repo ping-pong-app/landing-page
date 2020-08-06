@@ -13,7 +13,7 @@ interface HeaderProps {
 const HeaderComponent = (props: HeaderProps) => {
     const { transparent } = props;
     
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -22,7 +22,7 @@ const HeaderComponent = (props: HeaderProps) => {
     return (
         <header className={transparent ? "transparent-header header-component" : "header-component"}>
             <nav className="navbar navbar-expand-lg navbar-dark">
-                <Link to="/" className="navbar-brand">Ping App</Link>
+                <Link to="/" className="navbar-brand">Pinger</Link>
                 <button className="navbar-toggler" type="button"
                     data-toggle="collapse" data-target="#navbar-links"
                     aria-controls="navbar-links" aria-expanded="false"

@@ -12,8 +12,8 @@ const IndexPage = () => {
             <div className="index-page">
                 <div className="header-background">
                     <div className="header-content">
-                        <img src={headerPulseImage} alt="Ping Application Logo"/>
-                        <h1>Ping App</h1>
+                        <img src={headerPulseImage} alt="Pinger Application Logo"/>
+                        <h1>Pinger</h1>
                         
                         <div className="header-actions">
                             <Link to="/beta" className="btn btn-primary">Try Beta</Link>

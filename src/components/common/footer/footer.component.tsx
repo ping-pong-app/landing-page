@@ -41,7 +41,7 @@ const FooterComponent = () => {
                     ))}
                 </div>
                 <div className="trademark">
-                    Ping App © {new Date().getFullYear()}
+                    Pinger App © {new Date().getFullYear()}
                 </div>
             </footer>
         </div>
