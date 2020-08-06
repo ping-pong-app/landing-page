@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+
+.about-page {
+  .title-header {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: $white;
+    background-color: $blue-primary;
+
+    h1 {
+      margin: 0;
+    }
+  }
+  .content {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    .join-section {
+      margin-top: 80px;
+
+      .contact-button {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+
+        button {
+          background-color: $blue-primary;
+          border: none;
+          color: $white;
+          font-size: 24px;
+          padding: 10px 60px;
+        }
+      }
+    }
+    .team-section {
+      margin-top: 80px;
+    }
+    .contact-section {
+      margin-top: 120px;
+    }
+  }
+}
+
+@include device-specific($pc) {
+  .about-page {
+    .content {
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+
+.contact-form-component {
+  form {
+    label {
+      font-weight: 600;
+    }
+
+    button[type=button] {
+      background-color: $blue-primary;
+      border: none;
+      color: $white;
+      padding: 10px 60px;
+
+      &[disabled] {
+        opacity: 0.75;
+      }
+    }
+  }
+}
