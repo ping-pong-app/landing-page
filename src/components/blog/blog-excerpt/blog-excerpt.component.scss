@@ -7,13 +7,18 @@
   h3 {
     font-size: 1.75rem;
     margin-bottom: 0 !important;
+
+    a {
+      font-size: inherit;
+      color: $light-grey;
+      text-decoration: none;
+    }
   }
   .with-separator {
     &:after {
       content: '\0025CF';
       font-weight: 200;
       margin: auto .5rem .1rem;
-      // color: #485371;
       color: $white;
     }
   }

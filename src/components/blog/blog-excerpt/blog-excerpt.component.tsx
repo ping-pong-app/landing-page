@@ -18,7 +18,9 @@ export const BlogExcerpt = (props: BlogExcerptProps) => {
     
     return (
         <article className="blog-excerpt-component">
-            <h3>{title}</h3>
+            <h3>
+                <Link to={path}>{title}</Link>
+            </h3>
             <small className="with-separator">{date}</small>
             <small>{author.name}</small>
             <p>
