@@ -59,7 +59,7 @@ export const pageQuery = graphql`
             frontmatter {
                 path
                 title
-                date
+                date(formatString: "DD.MM.YYYY")
                 author
             }
         }
