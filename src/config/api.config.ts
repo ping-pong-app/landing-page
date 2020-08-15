@@ -1,1 +1,1 @@
-export const HEALTH_URL = "https://test.mjamsek.com/health/ready";
+export const HEALTH_URL = "https://api.pinger.group/health/ready";
