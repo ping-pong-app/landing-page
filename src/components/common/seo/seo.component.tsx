@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import favicon from "../../../media/favicon.ico";
 
 export interface SeoProps {
     description?: string;
@@ -26,7 +27,10 @@ const SeoComponent = (props: SeoProps) => {
             title={title}
             titleTemplate={"%s | Pinger"}
             meta={fullMeta}
-        />
+        >
+            <link rel="shortcut icon" href={favicon} type="image/x-icon" />
+            <link rel="icon" href={favicon} type="image/x-icon" />
+        </Helmet>
     );
 };
 
